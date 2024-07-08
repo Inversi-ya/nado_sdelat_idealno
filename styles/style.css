@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    background: #FFCEF1;
     height: 100%;
     position: relative;
     display: flex;
@@ -43,15 +44,16 @@ h1 {
     font-weight: 400;
     font-size: 35px;
     line-height: 35px;
+    letter-spacing: 0;
     text-transform: none;
     text-align: left;
     content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
     white-space: pre;
     color:black;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid currentColor;
     border-radius: 20px;
-    box-shadow: 0 14px 0 0 black;
+    box-shadow: 0 14px 0 0 currentColor;
     padding: 36px 44px;
     position: absolute;
     top: 180px;
@@ -61,19 +63,16 @@ h1 {
 .header {
     margin: 0 auto;
     z-index: 0;
+    max-width: 740px;
 }
 
 .header:hover {
+    cursor: default;
     color: #4C4C4C;
 }
 
 .header::after {
     content: "*";
-    color: black;
-}
-
-.header:hover::after {
-    color: #4C4C4C;
 }
 
 .video {
